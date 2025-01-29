@@ -76,9 +76,9 @@ const categories = [
         price: "34,500₮",
       },
       {
-        foodName: "PESTO CHICKEN PASTA",
+        foodName: "VEGETARIAN DELIGHT",
         ingredients: "Topped with bell peppers, mushrooms, olives, onions, and fresh tomatoes.",
-        price: "29,00₮",
+        price: "29,900₮",
       }
     ]
   },
@@ -96,45 +96,45 @@ function Card(props){
         <div className="sector-1">
             <div className="food-1">
                 <p>
-                asbdasd
+                {props.category.foods[0].foodName}
                 </p>
                 <p>
-                  24,900₮
+                {props.category.foods[0].price}
                 </p>
             </div>
             <div className="ingre-1">
                 <p>
-                  Served with Sundried tomatoes, chunky garlic croutons and grilled Chicken
+                {props.category.foods[0].ingredients}
                 </p>
             </div>
         </div>
         <div className="sector-2">
         <div className="food-2">
                 <p>
-                  CHICKEN CAESER SALAD
+                {props.category.foods[1].foodName}
                 </p>
                 <p>
-                  24,900₮
+                {props.category.foods[1].price}
                 </p>
             </div>
             <div className="ingre-2">
                 <p>
-                  Served with Sundried tomatoes, chunky garlic croutons and grilled Chicken
+                {props.category.foods[1].ingredients}
                 </p>
             </div>
         </div>
         <div className="sector-3">
         <div className="food-3">
                 <p>
-                  CHICKEN CAESER SALAD
+                {props.category.foods[2].foodName}
                 </p>
                 <p>
-                  24,900₮
+                {props.category.foods[2].price}
                 </p>
             </div>
             <div className="ingre-3">
                 <p>
-                  Served with Sundried tomatoes, chunky garlic croutons and grilled Chicken
+                {props.category.foods[2].ingredients}
                 </p>
             </div>
         </div>
